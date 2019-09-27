@@ -1,5 +1,5 @@
 # kRecyclerViewDemo
-使用RecyclerView简单实现增删改查，简单修改部分代码也可以实时查询，也用到了glide框架加载图片
+使用RecyclerView简单实现增删改查，配合ArrayList实现的，简单修改部分代码也可以实时查询，也用到了glide框架加载图片
 代码里面的几乎都有注释，应该也不会有看不懂的
 ### 主界面
 ![1.png](https://github.com/9526310/kRecyclerViewDemo/blob/master/1.png)
