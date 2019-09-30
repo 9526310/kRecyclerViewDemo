@@ -1,4 +1,4 @@
-package com.zm.recyclerviewtest;
+package com.zm.recyclerviewtest.utils;
 
 import android.text.Editable;
 import android.text.Selection;

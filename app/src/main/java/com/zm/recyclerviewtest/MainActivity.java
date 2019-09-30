@@ -11,14 +11,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Selection;
-import android.text.Spannable;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -28,9 +22,10 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.zm.recyclerviewtest.adapter.MyRecyclerviewAdapter;
 import com.zm.recyclerviewtest.bean.Student;
+import com.zm.recyclerviewtest.utils.DashlineItemDivider;
+import com.zm.recyclerviewtest.utils.SomeUtils;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * 主界面，用recyclerview实现简单的增删改查，这里只用到LinearLayoutManager，其他布局的没用到
@@ -133,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 adapter = new MyRecyclerviewAdapter(this,list,R.layout.layout_students_list_item);
                 recyclerview.setAdapter(adapter);
+                //添加分割线
+                recyclerview.addItemDecoration(new DashlineItemDivider());
                 break;
             case R.id.btn_GridLayoutManager://切换GridLayoutManager
                 GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
